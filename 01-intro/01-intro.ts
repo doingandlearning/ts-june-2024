@@ -9,3 +9,7 @@
 // 3. Static typing
 // 4. Tooling - IDE, type inference
 // 5. Gradual adoption
+
+function add(a, b) {
+  return a + b;
+}
