@@ -44,8 +44,15 @@ interface NewInterface {}
     laysEggs: true;
   }
 
+  let peacock: Peacock = { colourful: false };
+
   let chicken: Chicken = {};
   let owl: Owl = {};
 }
 
 // https://ts-error-translator.vercel.app/
+
+{
+  let name = "Kevin";
+  const name1 = "Kevin";
+}
