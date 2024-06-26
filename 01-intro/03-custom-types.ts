@@ -45,8 +45,7 @@ interface NewInterface {}
   }
 
   let chicken: Chicken = {};
-  let owl: Owl = {
-    wings: 2,
-    nocturnal: true,
-  };
+  let owl: Owl = {};
 }
+
+// https://ts-error-translator.vercel.app/
