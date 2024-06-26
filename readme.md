@@ -20,7 +20,7 @@ Unit 1: TS Intro - exploring types, interfaces dicts, map and guard types.
 
 Unit 2: Exploring the setup of an initial project - package.json, tsconfig.json, src and dist directory
 
-Unit 3: Imports - explore how imports work
+Unit 3: Imports - explore how imports work - CJS, ESM and TS -
 
 Unit 4: What's new - looking at some es6+ improvements - backticks, arrow functions, default parameters, generators and iterators
 
