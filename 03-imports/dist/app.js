@@ -22,9 +22,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 const stringUtils_1 = require("./stringUtils"); // ESM
+const test_1 = __importDefault(require("@components/test"));
 console.log((0, stringUtils_1.toUpperCase)("i'm still working!"));
+(0, test_1.default)();
 // console.log(module); // This only exists in CommonJS
 async function loadUpperCaseModule() {
     const strings = await Promise.resolve().then(() => __importStar(require("./stringUtils")));

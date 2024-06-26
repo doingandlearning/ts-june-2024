@@ -5,14 +5,24 @@ interface ToDo {
   id: number;
   title: string;
   completed: boolean | "archived" | "pending" | "deleted";
+  arrayOfTodos: string[];
+  completionDate: Date;
 }
 
-const typedTodos: ToDo[] = data.todos as ToDo[];
+type ToDoKeys = keyof ToDo;
+
+// // Extract the union of all the value types
+type ValueOf<T> = T[keyof T];
+
+// // // Apply it to the ToDo interface
+type ToDoValueTypes = ValueOf<ToDo>;
+
+const typedTodos: ToDo[] = data.todos;
 
 let todo1: ToDo = typedTodos[0];
 let todo2: ToDo = typedTodos[1];
 
-typedTodos.sort((a, b) => a.userId - b.userId); // .toSorted()
+typedTodos.toSorted((a, b) => a.userId - b.userId); // .toSorted()
 
 console.log(typedTodos);
 

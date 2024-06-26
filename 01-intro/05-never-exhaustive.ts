@@ -41,3 +41,5 @@ try {
 } catch (error) {
   console.error(error.message); // Output: Value cannot be null
 }
+
+export {};
