@@ -23,4 +23,7 @@ interface BBCApiResponse<DataType> {
   body: DataType;
 }
 
-const response: BBCApiResponse<{ headline: string; body: string }[]> = null;
+const response: BBCApiResponse<Array<{ headline: string; content: string }>> =
+  null;
+
+type NewsApi = BBCApiResponse<{ headline: string }[]>;
