@@ -28,9 +28,9 @@ Unit 5: Narrowing, Widening and Generics - Understanding the type system some mo
 
 Unit 6: Legacy code - take a small JS library and gradually add TS to it.
 
-Unit 7: Async - exploration of the evolution of async in JS
-
 Unit 8: Automation and DOM Manipulation - Exploring webpack and getting setup in a new project. Also, using TS to add components with JS to manipulate the dom - add event listeners etc
+
+Unit 7: Async - exploration of the evolution of async in JS
 
 Unit 9: Functional Programming - an exploration on what functional programming is, why it's a helpful paradigm and some practice
 
