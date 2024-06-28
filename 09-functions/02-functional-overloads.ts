@@ -10,6 +10,7 @@ function task(name: string, arg2: string[] | CallbackFn, arg3?: CallbackFn) {
   //
 }
 
+
 // Client code
 task("default", ["styles", "scripts"]);
 task("scripts", ["lint"], () => {});
