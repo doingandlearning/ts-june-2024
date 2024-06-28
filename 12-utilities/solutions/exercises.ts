@@ -85,3 +85,20 @@ let completeTask: RequiredTaskFields = {
 // For ReturnType and InstanceType, just ensuring the above types compile without errors is sufficient.
 
 export {};
+
+// Overload signatures
+function accessSystemFeatures(user: User<"admin">): string;
+function accessSystemFeatures(user: User<NonAdminRoles>): void;
+// Function implementation
+function accessSystemFeatures(user: User<UserRole>): string | void {
+  if (user.role === "admin") {
+    // Admin-specific logic
+    return "Access to admin features granted";
+  } else {
+    // Non-admin logic
+    console.log("Access to regular features granted");
+  }
+}
+
+const value1 = accessSystemFeatures(user1);
+const value = accessSystemFeatures(user2);
