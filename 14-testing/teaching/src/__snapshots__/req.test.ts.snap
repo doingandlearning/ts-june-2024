@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`responds with data 1`] = `"some other data!!!"`;
+
+exports[`unhappy path for fakeFetch 1`] = `"some other data!!!"`;
