@@ -77,3 +77,8 @@ const triangle: ShapeTypes.RightTriangle = {
 };
 getArea(triangle);
 console.log(triangle);
+
+type A = { a: string };
+type B = { b: A };
+
+type AB = A & B;

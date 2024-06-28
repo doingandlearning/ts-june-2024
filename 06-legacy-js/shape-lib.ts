@@ -18,7 +18,6 @@ export interface Circle extends IShape {
 export interface Rectangle extends IShape {
   length: number;
   width: number;
-  getArea: (length: number, width: number) => number;
   type: "rectangle";
 }
 
